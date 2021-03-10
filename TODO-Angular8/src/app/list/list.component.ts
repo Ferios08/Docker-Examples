@@ -9,7 +9,7 @@ import { CardsService } from '../sercices/card.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  public items : Card[] = [];
+  public items = [];
   public newTask;
   public elements = 0;
 
