@@ -1,6 +1,6 @@
 version: '3'
 services:
-  db:
+  mydb:
     image: mysql:5.7
     container_name: mydb
     env_file:

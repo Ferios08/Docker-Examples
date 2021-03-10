@@ -9,7 +9,7 @@ services:
     ports:
       - "1338:1338"
     environment:
-      DB_HOST: "mydb"
+      DB_HOST: "10.0.0.4"
       DB_PORT: "3306"
       DB_USER: "user"
       DB_PASS: "pass"
