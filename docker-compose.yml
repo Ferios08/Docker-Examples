@@ -1,0 +1,30 @@
+version: '3'
+services:
+  builtbackend:
+    image: todobackend:latest
+    build:
+      context: .
+      dockerfile: TODO-NodeJS/Dockerfile
+    container_name: builtbackend
+    ports:
+      - "1338:1338"
+    environment:
+      DB_HOST: "mydb"
+      DB_PORT: "3306"
+      DB_USER: "user"
+      DB_PASS: "pass"
+      DB_NAME: "testdb"
+      NODE_ENV: "dev"
+    restart: always
+    networks: db-network
+
+  builtfrontend:
+    image: todofront:latest
+    build:
+      context: .
+      dockerfile: TODO-Angular8/Dockerfile
+    container_name: builtfront
+
+    restart: always
+    ports:
+      - 8080:80

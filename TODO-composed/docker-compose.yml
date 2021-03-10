@@ -1,0 +1,18 @@
+version: '3'
+services:
+  backend:
+    image: todobackend:latest
+    container_name: backend
+    env_file:
+      - mysql.env # configure env vars in this file
+    ports:
+      - "1338:1338"
+    restart: always
+
+  frontend:
+    image: todofront:latest
+    container_name: todofront
+
+    restart: always
+    ports:
+      - 8080:80
