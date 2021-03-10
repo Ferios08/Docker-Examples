@@ -2,7 +2,7 @@ version: '3'
 services:
   db:
     image: mysql:5.7
-    container_name: db
+    container_name: mydb
     env_file:
       - mysql.env # configure env vars in this file
     ports:
