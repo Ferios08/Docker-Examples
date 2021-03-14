@@ -17,9 +17,9 @@ services:
     networks:
       - dbnetwork
     depends_on:
-      - db
+      - mydb
     environment:
-      PMA_HOST: db
+      PMA_HOST: mydb
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     restart: always
