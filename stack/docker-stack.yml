@@ -4,6 +4,8 @@ services:
   web:
     image: pythonapp
     build: .
+    deploy:
+      replicas: 3
     ports:
       - "8000:8000"
   redis:
