@@ -12,7 +12,7 @@ services:
     networks:
       - dbnetwork
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin
     container_name: pma
     networks:
       - dbnetwork

@@ -1,4 +1,4 @@
-docker service create --name mywebapp --replicas 3 --publish 8080:80 nginx
+docker service create --name mywebapp --replicas 3 --publish 8081:80 firasdotcom/todofront
 
 docker service ls
 ocker service ps mywebapp

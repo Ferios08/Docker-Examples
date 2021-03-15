@@ -13,7 +13,7 @@ docker node ls
 
 docker node inspect self --pretty
 docker node update --availability drain node-1
-docker node update --availability ready node-1
+docker node update --availability active node-1
 docker node promote node-3
 docker node demote node-3
 
