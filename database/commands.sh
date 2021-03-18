@@ -10,4 +10,4 @@ docker run -d   --name mydb  --network db-network \
 
 docker run -d --name phpmydadmin \
     --network db-network -e PMA_HOST=mydb  -p 8080:80 \
-    phpmyadmin/phpmyadmin
+    phpmyadmin

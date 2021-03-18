@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://weshare.tn:1338'
+  apiUrl: 'http://canbe.fun:1338'
 };
 
 /*

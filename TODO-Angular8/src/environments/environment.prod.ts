@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://weshare.tn:1338'
+  apiUrl: 'http://canbe.fun:1338'
 };
